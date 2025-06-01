@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saiteja Bachu - Portfolio</title>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero-photo {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Saiteja</a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-flex" style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+        <div class="hero-content" data-aos="fade-right">
+          <h1 class="hero-title">👋 Hello, I'm <span class="text-primary">Saiteja Bachu</span></h1>
+          <p class="hero-subtitle">Creating solutions that matter. Passionate about software, AI, and emerging technologies</p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <div data-aos="fade-left">
+          <img src="101aa99e-0f94-45ab-b263-8ec9aecdc737.png" alt="Saiteja Bachu" class="hero-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up"></section>
+  <section id="skills" data-aos="fade-up"></section>
+  <section id="projects" data-aos="fade-up"></section>
+  <section id="education" data-aos="fade-up"></section>
+  <section id="contact" data-aos="fade-up"></section>
+
+  <footer></footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
